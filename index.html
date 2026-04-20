@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Anand Mallick">
+    <title>Anand Mallick | Portfolio</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicon for Technology Logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body>
+
+    <!-- Floating Background Shapes -->
+    <div class="blob shape1"></div>
+    <div class="blob shape2"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Anand Mallick<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-nav">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero fade-in">
+            <div class="hero-content">
+                <h2 class="greeting">Hello, I'm</h2>
+                <h1 class="name">Anand Mallick</h1>
+                <h3 class="dynamic-title"><span class="typing-text"></span><span class="cursor">&nbsp;</span></h3>
+                <p class="hero-desc">I build interactive and visually stunning digital experiences. Let's create
+                    something amazing together.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn primary-btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <!-- 
+                  THIS IS YOUR PHOTO AREA 
+                  Right now, it just shows a placeholder gradient. 
+                  When you take your photo, upload it to the same folder and replace 'placeholder.jpg' with your file name.
+                -->
+                <div class="photo-placeholder" id="myPhotoArea">
+                    <img src="anand1.jpeg" alt="Anand's Photo" id="profileImg"
+                        onerror="this.style.display='none'; document.getElementById('photoText').style.display='block';">
+                    <div id="photoText" class="photo-text">
+                        <span>📸<br>Your Photo<br>Goes Here<br><br><small>(anand1.jpeg)</small></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about reveal">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-container glass-panel">
+                <p>Hello! I am a passionate creator who loves turning ideas into reality through code and design. I
+                    enjoy building applications that provide excellent user experiences and solve real-world problems.
+                </p>
+                <p>When I'm not learning new tech or optimizing algorithms, you can find me exploring new ideas for
+                    projects, reading, or planning my next big venture. My focus is always on writing clean, elegant,
+                    and efficient code.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills reveal">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <div class="skills-grid">
+                <!-- Add or remove skills as needed -->
+                <div class="skill-card glass-panel"><i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card glass-panel"><i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card glass-panel"><i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card glass-panel"><i class="devicon-mongodb-plain"></i>
+                    <h3>MongoDB</h3>
+                </div>
+                <div class="skill-card glass-panel"><i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card glass-panel"><i class="fas fa-database"></i>
+                    <h3>SQL / NoSQL</h3>
+                </div>
+                <div class="skill-card glass-panel"><i class="fab fa-git-alt"></i>
+                    <h3>Git & GitHub</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects reveal">
+            <h2 class="section-title">Featured <span>Projects</span></h2>
+            <div class="projects-grid">
+
+                <div class="project-card glass-panel" style="overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop"
+                        alt="Web Application Dashboard" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="project-info" style="padding: 1.5rem;">
+                        <h3>Eatopia Frontend & Backend</h3>
+                        <p>A full-stack web application featuring user authentication, order management, and database
+                            integration for a seamless restaurant experience. <br><small><i>(Team Project)</i></small>
+                        </p>
+                        <div class="project-tech">
+                            <span>Node.js</span><span>MongoDB</span><span>HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel" style="overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&auto=format&fit=crop"
+                        alt="IoT Circuit Board" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="project-info" style="padding: 1.5rem;">
+                        <h3>Smart Home IoT System</h3>
+                        <p>An automated environment control system utilizing Raspberry Pi and Arduino sensors to monitor
+                            temperature and remotely manage appliances. <br><small><i>(Team Project)</i></small></p>
+                        <div class="project-tech">
+                            <span>IoT</span><span>Arduino</span><span>Python</span><span>C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-panel" style="overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop"
+                        alt="Retro Gaming Platform" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div class="project-info" style="padding: 1.5rem;">
+                        <h3>Classic Web Arcade</h3>
+                        <p>A collection of classic browser games like Ludo, Chess, Pac-Man, and Snake featuring mobile
+                            controls, smart AI opponents, and polished animations. <br><small><i>(Team
+                                    Project)</i></small></p>
+                        <div class="project-tech">
+                            <span>Vanilla JS</span><span>Game Dev</span><span>DOM</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact reveal">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-container glass-panel">
+                <div class="contact-text">
+                    <p>I'm currently open for new opportunities. Whether you have a question or just want to say hi,
+                        I'll try my best to get back to you!</p>
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> ananndmallick4994@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i>KOLKATA, INDIA</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn primary-btn submit-btn">Send Message <i
+                            class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/ANANDMALLICK4994" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/anand-mallick-450" target="_blank"><i
+                    class="fab fa-linkedin-in"></i></a>
+
+        </div>
+        <p>&copy; 2026 Anand Mallick. Built from scratch.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
